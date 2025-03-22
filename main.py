@@ -1,22 +1,23 @@
-import tensorflow as tf
+from predict import predict_message
 
-# Define the path to the CSV file
-csv_file_path = "D:\FakeNews\covid.csv"
+print("🧠 Fake News Credibility Checker")
+print("Type a message and get its credibility score.")
+print("Type 'quit' to exit.\n")
 
-dataset = tf.data.experimental.make_csv_dataset(
-    csv_file_path,
-    batch_size=1,     # Use a batch size of 1 to inspect row by row
-    label_name="outcome",  # Replace with the actual label column name
-    num_epochs=1,     # Do not repeat the dataset
-    shuffle=False     # Do not shuffle for easier inspection
-)
+while True:
+    user_input = input("Enter a message: ")
+    if user_input.lower() == "quit":
+        break
 
-# Count the number of rows
-num_rows = sum(1 for _ in dataset)
+    score = predict_message(user_input)
+    print(f"🟢 Credibility score: {score:.2f}%")
 
-print(f"The file has {num_rows} rows.")
-
-# # Inspect the data
-# for features, label in dataset.take(10):  # View the first 5 rows
-#     print("Features:", features)
-#     print("Label:", label)
+    # Response by score
+    if score > 80:
+        print("✅ This message seems highly reliable.\n")
+    elif score > 50:
+        print("⚠️ This message might be credible, but further verification is recommended.\n")
+    elif score > 20:
+        print("❗ This message seems suspicious. Be cautious.\n")
+    else:
+        print("🚫 This message is likely fake news.\n")
