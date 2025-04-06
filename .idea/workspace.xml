@@ -5,9 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="85589007-ff93-48c3-b796-665587fcc96f" name="Changes" comment="delete files">
-      <change afterPath="$PROJECT_DIR$/Fake-News/final_balanced_600_dataset.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fake-News/trainModel.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/build_balanced_dataset.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/googleAPI.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/iron_swords_fact_check_dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/preprocessing.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/trainModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News/trainModel.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,35 +26,46 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Fake-News" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
   <component name="ProjectId" id="2gj2qdYc88d5s8ROnjhBXe0ar4u" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Python.__init__.executor&quot;: &quot;Run&quot;,
-    &quot;Python.balance_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.clean_text.executor&quot;: &quot;Run&quot;,
-    &quot;Python.main.executor&quot;: &quot;Run&quot;,
-    &quot;Python.merge_datasets.executor&quot;: &quot;Run&quot;,
-    &quot;Python.predict.executor&quot;: &quot;Run&quot;,
-    &quot;Python.prepare_dataset.executor&quot;: &quot;Run&quot;,
-    &quot;Python.prepare_embedding.executor&quot;: &quot;Run&quot;,
-    &quot;Python.scrape_real_news.executor&quot;: &quot;Run&quot;,
-    &quot;Python.trainModel.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_cnn.executor&quot;: &quot;Run&quot;,
-    &quot;Python.train_model.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Python.__init__.executor": "Run",
+    "Python.balance_dataset.executor": "Run",
+    "Python.build_balanced_dataset.executor": "Run",
+    "Python.clean_text.executor": "Run",
+    "Python.googleAPI.executor": "Run",
+    "Python.main.executor": "Run",
+    "Python.merge_datasets.executor": "Run",
+    "Python.predict.executor": "Run",
+    "Python.prepare_dataset.executor": "Run",
+    "Python.prepare_embedding.executor": "Run",
+    "Python.preprocessing.executor": "Run",
+    "Python.scrape_real_news.executor": "Run",
+    "Python.trainModel.executor": "Run",
+    "Python.train_cnn.executor": "Run",
+    "Python.train_model.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/משתמש/PycharmProjects/pythonProject/Fake-News",
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\משתמש\PycharmProjects\pythonProject\Fake-News" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\משתמש\PycharmProjects\pythonProject\Fake-News" />
     </key>
@@ -120,7 +134,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1743686757373</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL‎-00004" summary="delete files">
+      <option name="closed" value="true" />
+      <created>1743700808149</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL‎-00004" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1743700808149</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -135,6 +157,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete files" />
     <option name="LAST_COMMIT_MESSAGE" value="delete files" />
   </component>
