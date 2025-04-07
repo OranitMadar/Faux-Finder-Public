@@ -4,13 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85589007-ff93-48c3-b796-665587fcc96f" name="Changes" comment="delete files">
-      <change afterPath="$PROJECT_DIR$/Fake-News/build_balanced_dataset.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fake-News/googleAPI.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fake-News/iron_swords_fact_check_dataset.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fake-News/preprocessing.py" afterDir="false" />
+    <list default="true" id="85589007-ff93-48c3-b796-665587fcc96f" name="Changes" comment="trying API">
+      <change afterPath="$PROJECT_DIR$/Fake-News/Iron_Swords_1000_Claims_Dataset.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/trainModelIronSwords.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/trainModelWithGloVe.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Fake-News/trainModel_COVID19.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fake-News/trainModel.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News/trainModel.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/clean_dataset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/iron_swords_fact_check_dataset.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/real_news.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News/trainModel.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,9 @@
     "Python.balance_dataset.executor": "Run",
     "Python.build_balanced_dataset.executor": "Run",
     "Python.clean_text.executor": "Run",
+    "Python.fake_news_scraper_combined.executor": "Run",
     "Python.googleAPI.executor": "Run",
+    "Python.ironSwords.executor": "Run",
     "Python.main.executor": "Run",
     "Python.merge_datasets.executor": "Run",
     "Python.predict.executor": "Run",
@@ -55,6 +62,9 @@
     "Python.preprocessing.executor": "Run",
     "Python.scrape_real_news.executor": "Run",
     "Python.trainModel.executor": "Run",
+    "Python.trainModelIronSwords.executor": "Run",
+    "Python.trainModelWithGloVe.executor": "Run",
+    "Python.trainModel_COVID19.executor": "Run",
     "Python.train_cnn.executor": "Run",
     "Python.train_model.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -142,7 +152,23 @@
       <option name="project" value="LOCAL‎" />
       <updated>1743700808149</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL‎-00005" summary="trying API">
+      <option name="closed" value="true" />
+      <created>1743962448959</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL‎-00005" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1743962448959</updated>
+    </task>
+    <task id="LOCAL‎-00006" summary="trying API">
+      <option name="closed" value="true" />
+      <created>1743962862415</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL‎-00006" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1743962862415</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -159,6 +185,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete files" />
-    <option name="LAST_COMMIT_MESSAGE" value="delete files" />
+    <MESSAGE value="trying API" />
+    <option name="LAST_COMMIT_MESSAGE" value="trying API" />
   </component>
 </project>
