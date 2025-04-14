@@ -5,7 +5,7 @@ import time
 import newspaper
 import matplotlib.pyplot as plt
 
-API_KEY = "AIzaSyCyRn5CFp9VLj2Y0HR67H6qDWcAuPcKiXg"
+API_KEY = ""
 
 def search_fact_check(query, language="en"):
     url = "https://factchecktools.googleapis.com/v1alpha1/claims:search"
