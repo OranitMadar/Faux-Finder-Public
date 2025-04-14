@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85589007-ff93-48c3-b796-665587fcc96f" name="Changes" comment="trying API">
-      <change afterPath="$PROJECT_DIR$/Fake-News/cutForBalance.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Fake-News/zenodo_cut_for_balance.csv" afterDir="false" />
+    <list default="true" id="85589007-ff93-48c3-b796-665587fcc96f" name="Changes" comment="after fixing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fake-News/balanced_dataset.csv" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News/balanced_dataset.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Fake-News/trainModel_COVID19.py" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News/trainModel_COVID19.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Fake-News" beforeDir="false" afterPath="$PROJECT_DIR$/Fake-News" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +168,15 @@
       <option name="project" value="LOCAL‎" />
       <updated>1744051177158</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL‎-00008" summary="after fixing">
+      <option name="closed" value="true" />
+      <created>1744628888545</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL‎-00008" />
+      <option name="project" value="LOCAL‎" />
+      <updated>1744628888545</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,7 +194,8 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="delete files" />
     <MESSAGE value="trying API" />
-    <option name="LAST_COMMIT_MESSAGE" value="trying API" />
+    <MESSAGE value="after fixing" />
+    <option name="LAST_COMMIT_MESSAGE" value="after fixing" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
