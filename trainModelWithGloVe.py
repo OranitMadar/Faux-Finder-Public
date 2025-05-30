@@ -35,7 +35,7 @@ def clean_text(text):
     return " ".join(words)
 
 # --- שלב 1: קריאה והכנה ---
-df = pd.read_csv("final_train_dataset.csv")
+df = pd.read_csv("Datasets/kaggle_dataset_politics.csv")
 
 df["text"] = df["text"].astype(str).apply(clean_text)
 df["label"] = df["label"].astype('float32')
@@ -129,7 +129,7 @@ plt.show()
 
 
 # --- שמירת המודל והוקטוריזציה ---
-model.save("final_train.keras", save_format="keras")
+model.save("CNN_Models/kaggle_dataset_politics.keras", save_format="keras")
 print("\n✅ המודל והוקטוריזציה נשמרו בהצלחה!")
 
 
@@ -145,28 +145,31 @@ texts_tensor = tf.convert_to_tensor(texts)
 pred_probs = model.predict(texts_tensor)
 pred_labels = (pred_probs.flatten() >= 0.5).astype(int)
 
+# --- היפוך תוויות כדי שה-TP בפלט יהיה עבור פייק (0) ---
+labels = 1 - np.array(labels)
+pred_labels = 1 - pred_labels
+
 # חישוב מטריצת בלבול
 cm = confusion_matrix(labels, pred_labels)
 TN, FP, FN, TP = cm.ravel()
 
-# מדדים נוספים
-accuracy = accuracy_score(labels, pred_labels)
-precision = precision_score(labels, pred_labels)
-recall = recall_score(labels, pred_labels)
-f1 = f1_score(labels, pred_labels)
+# --- חישוב מדדים ---
+accuracy = (TP + TN) / (TP + TN + FP + FN)
+precision = TP / (TP + FP) if (TP + FP) > 0 else 0
+recall = TP / (TP + FN) if (TP + FN) > 0 else 0
+f1 = 2 * precision * recall / (precision + recall) if (precision + recall) > 0 else 0
 loss, _ = model.evaluate(test_ds, verbose=0)
 
-# --- הדפסת התוצאות ---
-print("\n📊 תוצאות המודל:")
-print(f"✅ True Positives: {TP}")
-print(f"❌ False Positives: {FP}")
-print(f"❌ False Negatives: {FN}")
-print(f"✅ True Negatives: {TN}")
-print(f"📌 Prediction real news (סה\"כ): {sum(pred_labels)}")
+print("\n📊 תוצאות המודל (בהתייחס לחדשות מזויפות):")
+print(f"✅ True Positives (פייק שזוהו נכון): {TP}")
+print(f"❌ False Positives (ריל שזוהו כפייק): {FP}")
+print(f"❌ False Negatives (פייק שזוהו כריל): {FN}")
+print(f"✅ True Negatives (ריל שזוהו נכון): {TN}")
+print(f"📌 Prediction fake news (סה\"כ): {sum(pred_labels)}")
 
 print("\n📈 מדדים:")
-print(f"🎯 Accuracy:  {accuracy:.4f}")
-print(f"🎯 Precision: {precision:.4f}")
-print(f"🔁 Recall:    {recall:.4f}")
-print(f"💡 F1 Score:  {f1:.4f}")
-print(f"🧮 Loss:      {loss:.4f}")
+print(f"🎯 Accuracy (כללי):  {accuracy:.4f}")
+print(f"🎯 Precision (פייק): {precision:.4f}")
+print(f"🔁 Recall (פייק):    {recall:.4f}")
+print(f"💡 F1 Score (פייק):  {f1:.4f}")
+print(f"🧮 Loss:              {loss:.4f}")
